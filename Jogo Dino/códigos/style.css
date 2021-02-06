@@ -1,0 +1,81 @@
+body{
+    background: #fafafa;
+}
+
+.inicio {
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    bottom: 600px;
+    left: 750px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+
+.dino {
+    width: 60px;
+    height: 60px;
+    background-image: url(../imgs/dino.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(../imgs/cactus.png);
+}
+
+.game-over {
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao {
+    align-content: center;
+    border: 5px solid black;
+    height: 75px;
+    width: 100px;
+    border-radius: 25%;
+    margin-left: 47%;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background: gold;
+    height: 90px;
+    width: 115px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+
+.placar {
+    text-align: center;
+}
+
+@keyframes slideRight {
+    from {
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0;
+    }   
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(../imgs/background.png);
+    background-repeat: repeat-x;
+    animation: slideRight 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
